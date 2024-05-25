@@ -5,6 +5,7 @@ import ContactList from './pages/ContactList';
 import ContactForm from './pages/ContactForm';
 import Dashboard from './pages/Dashboard';
 import Layout from './components/Layout';
+import ContactDetail from './pages/ContactDeatils';
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
 
         <Route path="/add" element={<ContactForm />} />
         <Route path="/edit/:id" element={<ContactForm />} />
+        <Route path="/contact/:id" element={<ContactDetail />} />
 
       </Routes>
     </Router>
